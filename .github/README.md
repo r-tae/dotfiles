@@ -1,5 +1,5 @@
 # dotfiles
-Configuration for setting up a new machine
+> My dotfiles use a bare repo, like https://github.com/anandpiyer/.dotfiles/blob/master/.dotfiles/README.md
 
 1. Install homebrew:
   ```sh
@@ -11,6 +11,13 @@ Configuration for setting up a new machine
   ii. add `fish` to `echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells`
 
 3. Download IBM Plex Mono from `https://github.com/IBM/plex` and https://github.com/ryanoasis/nerd-fonts/blob/master/src/glyphs/Symbols-1000-em%20Nerd%20Font%20Complete.ttf
+
+4. Clone dotfiles directories:
+```sh
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/r-tae/dotfiles.git tmpdotfiles
+rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
+rm -r tmpdotfiles
+```
 
 
 TODO: Add sections for:
