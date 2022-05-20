@@ -22,6 +22,10 @@ rm -r tmpdotfiles
 
 TODO: Add sections for:
 - install & configure fish shell
+- add brewfile for the basics:
+  - starship
+  - firefox
+  - hammerspoon(??)
 - install & configure neovim:
 - other: \
     exa mapped to ls (incl. `la`)
