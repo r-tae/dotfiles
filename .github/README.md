@@ -38,6 +38,8 @@ TODO: Add sections for:
 - other: \
     exa mapped to ls (incl. `la`)
 
+TODO: create (otherwise unused) folder for non-dotfiles related setup automation, perhaps shell scripts to download/setup the more complicated things
+
 ## Misc settings
 
 ### Use touch ID for sudo
