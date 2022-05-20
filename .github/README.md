@@ -26,7 +26,15 @@ TODO: Add sections for:
   - starship
   - firefox
   - hammerspoon(??)
-- install & configure neovim:
+- spiceify
+- theming: entirely [catppuccin](https://github.com/catppuccin/catppuccin)
+  This includes:
+    - firefox
+    - alfred
+    - kitty
+    - discord
+    - spotify
+- install & configure neovim
 - other: \
     exa mapped to ls (incl. `la`)
 
