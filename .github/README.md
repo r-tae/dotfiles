@@ -19,6 +19,17 @@ rsync --recursive --verbose --exclude '.git' tmpdotfiles/ $HOME/
 rm -r tmpdotfiles
 ```
 
+## Hammerspoon
+> I use hammerspoon to set up a hyperkey, which is currently only used for application- and space-switching
+
+1. `brew install hammerspoon`
+2. Rebind Capslock to F18 (hammerspoon will treat it as caps when tapped) on startup by adding the plist in this repo to `launchctl`:
+  ```sh
+	launchctl load ~/Library/LaunchAgents/local.KeyMapping.plist
+	launchctl start local.KeyRemapping.plist
+	```
+3. Change mission control keyboard shortcuts to use hyper+{hjkl} (Preferences->Keyboard->Shortcuts). MacOS won't recognise keystrokes sent by hammerspoon, so you'll have to make the bindings by holding the real shortcuts (shift+ctl+opt+cmd+{hjkl})
+
 
 TODO: Add sections for:
 - install & configure fish shell
